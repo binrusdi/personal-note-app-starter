@@ -18,51 +18,26 @@
   /* border: 1px solid pink; */
 }
 
-a {
-  color: var(--on-background);
-}
-
-
 body {
   font-family: 'Inter', sans-serif;
 }
 
 header {
-  border: 2px solid plum;
-  text-align: center;
+  display: grid;
+  padding: 1rem;
+  column-gap: 5px;
+  border: 2px solid var(--error);
+  grid-template-columns: repeat(2, 1fr);
 }
-
 header ul {
   display: flex;
   list-style: none;
-  margin: 5px 15px;
 }
-
 header ul li {
-  margin: 5px;
+  margin: 2px;
   font-weight: bold;
+  text-align: center;
 }
-
-.display-note {
-  gap: 20px;
-  display: grid;
-  padding: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-article{
-    padding: 0 5px 5px 5px;
-  }
-  article span {
-    margin: 5px 5px 5px 0;
-    color: grey;
-  }
-
-@media only screen and (max-width: 800px){
-  .display-note{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
+header ul li a {
+  text-decoration: none;
 }

@@ -1,22 +1,12 @@
-import DisplayNote from "../component/DisplayNote";
+import React from "react"
+import Header from "../component/Header"
 
 function HomePage() {
-  return (
-    <>
-      <Header />
-      <DisplayNote />
-    </>
-  );
+    return (
+        <>
+            <Header />
+        </>
+    )
 }
 
-function Header() {
-  return (
-    <header>
-      <ul>
-        <li>Beranda</li>
-        <li>Tulis Catatan</li>
-      </ul>
-    </header>
-  );
-}
-export default HomePage;
+export default HomePage
